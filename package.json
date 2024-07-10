@@ -9,17 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "axios": "^1.7.2",
     "clsx": "^2.1.1",
+    "framer-motion": "^11.2.13",
+    "gsap": "^3.12.5",
     "lucide-react": "^0.402.0",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-spring": "^9.7.3",
+    "react-transition-group": "^4.4.5",
     "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-transition-group": "^4.4.10",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "postcss": "^8",

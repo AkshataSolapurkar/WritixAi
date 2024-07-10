@@ -3,3 +3,9 @@ export type SidebarLink = {
     href: string;
     label: string;
   };
+  export type NavbarProps = {
+    isActive:boolean
+    href: string;
+    label: string;
+    onClick:(href: string) => void;
+  };

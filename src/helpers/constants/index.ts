@@ -7,22 +7,22 @@ import { HandHelping } from "lucide-react";
 export const userSidebarLinks: SidebarLink[] = [
     {
       icon: LayoutDashboard,
-      href: "/dashboard",
+      href: "/adminpannel/dashboard",
       label: "Dashboard",
     },
     {
       icon: Edit,
-      href: "/edit",
+      href: "/adminpannel/edit",
       label: "Product Management",
     },
     {
       icon: ListOrderedIcon,
-      href: "/orderdetails",
+      href: "/adminpannel/orderdetails",
       label: "Order overview",
     },
     {
       icon: HandHelping,
-      href: "/customerdetails",
+      href: "/adminpannel/customerdetails",
       label: "Customer Details",
     },
     
