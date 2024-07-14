@@ -1,31 +1,31 @@
-import axios from 'axios';
-
 interface ProductCategoryData {
   products: any[]; 
-  categories: any[]; 
+  categories: any[];
 }
 
 export const fetchProductCategoryData = async (): Promise<ProductCategoryData> => {
+
   try {
     const endpoint = `${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/dashboard/getallproductcategorydata`;
+    console.log("Fetching data from:", endpoint); 
 
-    const res = await axios.get(endpoint, {
-      headers: {
-        "Content-Type": "application/json",
-      },
+    const res = await fetch(endpoint, {
+      method: "GET",
+      credentials: "include",
     });
 
-    const responseData: ProductCategoryData = res.data; 
+    if (!res.ok) {
+      const errorText = await res.text();
+      console.error(`HTTP error! status: ${res.status}, response: ${errorText}`); 
+      throw new Error(`HTTP error! status: ${res.status}, response: ${errorText}`);
+    }
+
+    const responseData: ProductCategoryData = await res.json();
+    console.log("Fetched data:", responseData); 
 
     return responseData;
   } catch (error) {
-    if (axios.isAxiosError(error)) {
-      console.error(`Error in fetching product and category data: ${error.message}`); 
-      throw new Error(`Error in fetching product and category data: ${error.message}`);
-    } else {
-      console.error("An unknown error occurred while fetching product and category data");
-      throw new Error("An unknown error occurred while fetching product and category data");
-    }
+    console.error("Error in fetching product and category data:", (error as Error).message); 
+    throw new Error(`Error in fetching product and category data: ${(error as Error).message}`);
   }
 };
-
