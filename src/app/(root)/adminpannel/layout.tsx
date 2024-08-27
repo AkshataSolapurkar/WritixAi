@@ -17,11 +17,11 @@ export default function RootLayout({
   return (
     <>
     <section>
-    <div className={"flex text-black h-full relative"}>
-      <div className="no-scrollbar h-[calc(100dvh-120px)]">
+    <div className={"flex text-black gap-5 h-full relative"}>
+      <div className="no-scrollbar pr-[10px] h-[calc(100dvh-120px)]">
         <Sidebar id={studentId} />
       </div>
-      <div className="w-full">{children}</div>
+      <div className="w-full px-[3%]">{children}</div>
     </div>
     </section>
     </>
