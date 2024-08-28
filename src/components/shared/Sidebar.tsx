@@ -4,13 +4,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { userSidebarLinks } from "@/helpers/constants";
+import Chart from "../ui/chart";
 
 const Sidebar = ({ id }: { id: string }) => {
   const pathname = usePathname();
 
   return (
     <aside className="md:rounded-xl rounded-l w-full h-full bg-[#ffffff] shadow-custom-inset md:mr-[6%] mr-[15px] px-[4px]">
-      <p>Menu</p>
+      <p className="text-gray-600 font-semibold text-[18px]">Menu</p>
       <ul className="flex flex-col justify-start items-start gap-4 h-full no-scrollbar overflow-y-auto pt-5">
         {userSidebarLinks.map((item) => {
           return (
@@ -42,6 +43,7 @@ const Sidebar = ({ id }: { id: string }) => {
             </Link>
           );
         })}
+        <Chart/>
       </ul>
     </aside>
   );

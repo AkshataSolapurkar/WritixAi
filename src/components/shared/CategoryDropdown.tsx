@@ -30,7 +30,7 @@ const Dropdown: React.FC<DropdownProps> = ({
   };
 
   return (
-    <div className={cn("relative text-gray-600 z-50", dropdownWrapperClassName)}>
+    <div className={cn("relative text-gray-600 z-50 w-full md:w-[200px]", dropdownWrapperClassName)}>
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
