@@ -60,6 +60,18 @@ const Navbar = () => {
           isActive={activeTab === '/mainstore'}
           onClick={handleTabClick}
         />
+        <Tab
+          href="/productlist"
+          label="Product Menu"
+          isActive={activeTab === '/productlist'}
+          onClick={handleTabClick}
+        />
+        <Tab
+          href="/q&a"
+          label="Q&A"
+          isActive={pathname.includes('/q&a')}
+          onClick={handleTabClick}
+        />
       </nav>
     </div>
   );

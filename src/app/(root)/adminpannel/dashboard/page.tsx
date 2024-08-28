@@ -10,7 +10,6 @@ const Page = () => {
   
   const features = Array.from({ length: 6 }, (_, index) => `Feature ${index + 1}`);
   
-  // Filter features based on the search term
   const filteredFeatures = features.filter(feature =>
     feature.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -19,7 +18,7 @@ const Page = () => {
     console.log("Selected category:", category);
   };
 
-  // Handle search input
+
   const handleSearch = (query: string) => {
     setSearchTerm(query);
   };

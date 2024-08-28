@@ -21,7 +21,7 @@ export default function RootLayout({
       <div className="no-scrollbar pr-[10px] h-[calc(100dvh-120px)]">
         <Sidebar id={studentId} />
       </div>
-      <div className="w-full px-[3%]">{children}</div>
+      <div className="w-full">{children}</div>
     </div>
     </section>
     </>
