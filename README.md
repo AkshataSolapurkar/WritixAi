@@ -21,3 +21,4 @@
    npm run dev
 
 4. **Project Link:**
+    https://writix-ai-wheat.vercel.app/adminpannel/dashboard
