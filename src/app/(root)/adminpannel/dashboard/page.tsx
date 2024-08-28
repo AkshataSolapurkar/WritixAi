@@ -24,8 +24,8 @@ const Page = () => {
   };
 
   return (
-    <div className="flex-grow overflow-y-auto custom__scrollbar h-[calc(100dvh-120px)]">
-      <div className="flex justify-between mt-[4%]">
+    <div className="flex-grow overflow-y-auto custom__scrollbar h-[calc(100dvh-200px)] md:h-[calc(100dvh-120px)]">
+      <div className="flex flex-col md:flex-row md:gap-0 gap-2 justify-between mt-[4%]">
         <SearchBar className="text-gray-600" onSearch={handleSearch} />
         <Dropdown
           options={categories}

@@ -25,25 +25,5 @@ export const userSidebarLinks: SidebarLink[] = [
       href: "/adminpannel/customerdetails",
       label: "Customer Details",
     },
-    {
-      icon: LayoutDashboard,
-      href: "",
-      label: "Board",
-    },
-    {
-      icon: Edit,
-      href: "",
-      label: "Management",
-    },
-    {
-      icon: ListOrderedIcon,
-      href: "",
-      label: "overview",
-    },
-    {
-      icon: HandHelping,
-      href: "",
-      label: "Details",
-    },
     
   ];
