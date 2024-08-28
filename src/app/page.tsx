@@ -7,7 +7,7 @@ const HomePage = () => {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace('/mainstore');
+    router.replace('/adminpannel/dashboard');
   }, [router]);
 
   return null;
