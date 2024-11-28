@@ -68,7 +68,7 @@ const Sidebarsmall = ({ id }: { id: string }) => {
                 <span
                   className={cn(
                     "text-xs",
-                    pathname === item.href ? "text-green-900" : ""
+                    pathname === item.href ? "text-green-900 text-center" : ""
                   )}
                 >
                   {item.label}
